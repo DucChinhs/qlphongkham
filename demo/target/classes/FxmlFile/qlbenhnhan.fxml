@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="551.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.qlbenhnhan">
+   <children>
+      <Text layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Quản lý bệnh nhân">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="14.0" layoutY="90.0" prefHeight="447.0" prefWidth="634.0" stylesheets="@../../target/classes/css/button.css">
+        <columns>
+          <TableColumn fx:id="cl1" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="cl2" prefWidth="143.0" text="Tên bệnh nhân" />
+            <TableColumn fx:id="cl3" prefWidth="68.0" text="Tuổi" />
+            <TableColumn fx:id="cl4" prefWidth="140.0" text="Ngày nhập viện" />
+            <TableColumn fx:id="cl5" prefWidth="207.0" text="Mô tả bệnh" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchText" layoutX="14.0" layoutY="56.0" prefHeight="25.0" prefWidth="634.0" />
+      <Label layoutX="668.0" layoutY="90.0" prefHeight="60.0" prefWidth="95.0" text="ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="668.0" layoutY="150.0" prefHeight="60.0" prefWidth="127.0" text="Tên :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="668.0" layoutY="210.0" prefHeight="60.0" prefWidth="161.0" text="Tuổi :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IDtextBox" layoutX="708.0" layoutY="108.0" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="Namebox" layoutX="731.0" layoutY="168.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="userbox" layoutX="732.0" layoutY="228.0" prefHeight="25.0" prefWidth="191.0" />
+      <Label layoutX="668.0" layoutY="261.0" prefHeight="60.0" prefWidth="161.0" text="Ngày nhập viện :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passbox" layoutX="807.0" layoutY="279.0" prefHeight="25.0" prefWidth="121.0" />
+      <Label layoutX="668.0" layoutY="313.0" prefHeight="60.0" prefWidth="161.0" text="Mô tả bệnh :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phonebox" layoutX="783.0" layoutY="331.0" prefHeight="25.0" prefWidth="145.0" />
+      <Button layoutX="668.0" layoutY="392.0" mnemonicParsing="false" onAction="#addpress" prefHeight="33.0" prefWidth="95.0" text="Thêm" />
+      <Button layoutX="779.0" layoutY="392.0" mnemonicParsing="false" onAction="#editpress" prefHeight="33.0" prefWidth="95.0" text="Sửa" />
+      <Button layoutX="668.0" layoutY="438.0" mnemonicParsing="false" onAction="#deletepress" prefHeight="33.0" prefWidth="95.0" text="Xóa" />
+   </children>
+</AnchorPane>
